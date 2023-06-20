@@ -53,6 +53,8 @@ while guessCorrect != 10:
         guessCorrect += 1
     elif guess % 2 != 0:
         print("It's", diceTotal, "not", guess, "(the total is always even)")
+        guessCorrect = 0
     else:
         print("It's", diceTotal, "not", guess)
+        guessCorrect = 0
     input()
